@@ -1,0 +1,21 @@
+{% extends "./layout.html" %}
+
+{% block head %}
+  <link href="../assets/css/popup.css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+  <div class="demo-headline">
+    <h1 class="demo-logo">
+      <div class="logo"></div>
+      WELCOME
+      <p>
+        소란에서 음악을
+        <a class="{{ SORAN_ROUTES['login'] }}">
+          들으세요.
+        </a>
+      </p>
+    </h1>
+
+  </div>
+{% endblock %}

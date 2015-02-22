@@ -1,0 +1,7 @@
+{
+  "dest": "./htmls",
+  "src": "./templates",
+  "excludes": ["layout.html"],
+  "verbose": true,
+  "watch": true
+}

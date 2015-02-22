@@ -2,3 +2,6 @@
 *.js
 
 node_modules/
+
+htmls/
+bower_components
