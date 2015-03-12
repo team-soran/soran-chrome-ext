@@ -2,6 +2,8 @@
 
 {% block head %}
   <link href="../assets/css/popup.css" rel="stylesheet" />
+  <script type="text/javascript"  src="../assets/js/popup.js">
+  </script>
 {% endblock %}
 
 {% block body %}
@@ -11,7 +13,7 @@
       WELCOME
       <p>
         소란에서 음악을
-        <a class="{{ SORAN_ROUTES['login'] }}">
+        <a href="{{ SORAN_ROUTES['login'] }}">
           들으세요.
         </a>
       </p>
