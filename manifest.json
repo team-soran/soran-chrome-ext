@@ -4,9 +4,9 @@
   "description": "소란, 음악을 즐기는 또 하나의 방법",
   "version": "0.5",
   "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "16": "./assets/img/icon16.png",
+    "48": "./assets/img/icon48.png",
+    "128": "./assets/img/icon128.png",
   },
 
   "permissions": [
@@ -32,7 +32,6 @@
       ],
 
       "js": [
-        "bower_components/jquery/dist/jquery.min.js",
         "content_script.js"
       ],
 
@@ -43,31 +42,3 @@
 
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
-
-  /*
-
-  "background": {
-    "page": "background.html"
-  },
-
-  "permissions": [
-    "tabs",
-    "cookies",
-    "http://bugs.co.kr/*",
-    "http://*.naver.com/*"
-  ],
-
-  "content_scripts": [
-    {
-      "matches": [
-        "http://music.naver.com/*",
-        "http://player.music.naver.com/*",
-        "http://music.bugs.co.kr/*",
-        "http://bugs.co.kr/*",
-        "http://*.bugs.co.kr/*"
-      ],
-      "js": ["jquery.js","contentScript.js"],
-      "run_at": "document_end"
-    }
-  ]
-  */
