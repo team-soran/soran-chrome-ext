@@ -1,3 +1,4 @@
+/*
 var naver = {
   getName: function(next) {
     next('abc');
@@ -29,7 +30,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 
 
-/*
 chrome.runtime.onConnect.addListener(function(port) {
   console.log(port)
   console.log(port.name)

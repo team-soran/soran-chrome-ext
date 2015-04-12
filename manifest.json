@@ -10,6 +10,7 @@
   },
 
   "permissions": [
+    "activeTab",
     "tabs",
     "cookies",
     "http://bugs.co.kr/*",
@@ -28,7 +29,11 @@
   "content_scripts": [
     {
       "matches": ["http://music.naver.com/*"],
-      "js": ["./assets/js/content_script.js"]
+      "css": ["./assets/css/naver.css"],
+      "js": [
+        "./bower_components/jquery/dist/jquery.js",
+        "./assets/js/naver_cs.js"
+      ]
     }
   ]
 }
